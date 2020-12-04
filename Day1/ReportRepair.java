@@ -5,12 +5,12 @@ import java.util.Scanner;
 class ReportRepair {
 
     public static void main(String[] args) throws Exception {
-        File file = new File("./input.txt"); 
-        Scanner sc = new Scanner(file); 
+        File file = new File("./input2.txt");
+        Scanner sc = new Scanner(file);
 
         int[] repo = new int[0];
-        while (sc.hasNextLine()) 
-            repo = append(repo, Integer.parseInt(sc.nextLine())); 
+        while (sc.hasNextLine())
+            repo = append(repo, Integer.parseInt(sc.nextLine()));
 
         System.out.println(result1(repo));
         System.out.println(result2(repo));
